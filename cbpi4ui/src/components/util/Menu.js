@@ -41,6 +41,10 @@ const MenuItem = ({ onClose, label, path = "/", children }) => {
 const Menu = ({onClose}) => {
     return <List>
         <MenuItem onClose={onClose} label="Dashboard" ><DashboardIcon /></MenuItem>
+        <MenuItem onClose={onClose} label="Dashboard 1" path="/fixdash/1"><Filter1Icon /></MenuItem>
+        <MenuItem onClose={onClose} label="Dashboard 2" path="/fixdash/2"><Filter2Icon /></MenuItem>
+        <MenuItem onClose={onClose} label="Dashboard 3" path="/fixdash/3"><Filter3Icon /></MenuItem>
+        <MenuItem onClose={onClose} label="Dashboard 4" path="/fixdash/4"><Filter4Icon /></MenuItem>
         <MenuItem onClose={onClose} label="Mash Profile" path="/mashprofile"><BallotIcon /></MenuItem>
         <MenuItem onClose={onClose} label="Fermenter Profile" path="/fermenterprofile"><BallotIcon /></MenuItem>
         <MenuItem onClose={onClose} label="Hardware" path="/hardware"><DeveloperBoardIcon /></MenuItem>
