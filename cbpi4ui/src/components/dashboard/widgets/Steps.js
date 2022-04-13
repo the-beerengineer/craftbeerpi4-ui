@@ -297,7 +297,7 @@ export const Steps = ({ id }) => {
       <div style={{ marign: 20 }}>
         <div className="section_header">{state.mashBasic?.name}</div>
         <MashControl disabled={state2.draggable} />
-        <List component="nav" style="max-height:300px;overflow:auto;" aria-label="main mailbox folders">
+        <List component="nav" style={{ maxHeight : '300px', overflow : 'auto' }} aria-label="main mailbox folders">
           {profile.map((row, index) => (
             <StepItem size={model.props.stepsize} item={row} key={index} />
           ))}
