@@ -295,7 +295,7 @@ export const Steps = ({ id }) => {
   return (
     <div className="box" style={inputStyle}>
       <div style={{ marign: 20 }}>
-        <div className="section_header">{state.mashBasic?.name}</div>
+        <div className="section_header" style={{ whiteSpace : 'nowrap', overflow : 'hidden', textOverflow : 'ellipsis' }} >{state.mashBasic?.name}</div>
         <MashControl disabled={state2.draggable} />
         <List component="nav" style={{ maxHeight : '300px', overflow : 'auto' }} aria-label="main mailbox folders">
           {profile.map((row, index) => (
